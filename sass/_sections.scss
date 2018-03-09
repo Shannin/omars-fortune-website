@@ -1,0 +1,119 @@
+// colors
+
+header,
+section,
+footer {
+    padding: 15px 0px;
+    overflow: hidden; 
+}
+
+.section--black {
+    background-color: $black;
+    color: $white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.section--image {
+    background-position: bottom center;
+    background-size: cover;
+    min-height: 85%;
+
+    &.section--image__left {
+        background-position: bottom right;
+
+        @media (min-width: 992px) {
+            background-position: bottom left;
+        }
+    }
+
+    &.section--image__right {
+        background-position: bottom left;
+
+        @media (min-width: 992px) {
+            background-position: bottom right;
+        }
+    }
+}
+
+.section--padded-small {
+    padding: 15px 0px;
+}
+
+.section--padded-medium {
+    padding: 35px 0px;
+}
+
+.section--padded-large {
+    padding: 60px 0px;
+}
+
+.section--padded-xl {
+    padding: 100px 0px;
+}
+
+
+
+
+
+
+.section--blue {
+    background-color: $blue;
+    color: $white;
+}
+
+.section--blue-gradient {
+    background-image: -ms-radial-gradient(right bottom, ellipse farthest-corner, #2D70AF 0%, #031440 85%);
+    background-image: -moz-radial-gradient(right bottom, ellipse farthest-corner, #2D70AF 0%, #031440 85%);
+    background-image: -o-radial-gradient(right bottom, ellipse farthest-corner, #2D70AF 0%, #031440 85%);
+    background-image: -webkit-gradient(radial, right bottom, 0, right bottom, 572, color-stop(0, #2D70AF), color-stop(100, #031440));
+    background-image: -webkit-radial-gradient(right bottom, ellipse farthest-corner, #2D70AF 0%, #031440 85%);
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #2D70AF 0%, #031440 85%);
+}
+
+.section--brown {
+    background-color: $brown-dark;
+    color: $white;
+}
+
+.section--gray {
+    background-color: $gray;
+    color: $black;
+}
+
+.section--orange {
+    background-color: $orange;
+    color: $white;
+}
+
+.section--orange-gradient {
+    background: $orange-light;
+    background: -moz-linear-gradient(-45deg,  $orange-light 0%, $orange 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,$orange-light), color-stop(100%,$orange));
+    background: -webkit-linear-gradient(-45deg,  $orange-light 0%,$orange 100%);
+    background: -o-linear-gradient(-45deg,  $orange-light 0%,$orange 100%);
+    background: -ms-linear-gradient(-45deg,  $orange-light 0%,$orange 100%);
+    background: linear-gradient(135deg,  $orange-light 0%,$orange 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$orange-light', endColorstr='$orange',GradientType=1 );
+}
+
+.section--orange-gradient-dark {
+    color: $white;
+
+    background: darken($orange, 10%);
+    background: -moz-linear-gradient(-15deg,  $orange 0%, darken($orange, 10%) 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,$orange), color-stop(100%,darken($orange, 10%)));
+    background: -webkit-linear-gradient(-15deg,  $orange 0%,darken($orange, 10%) 100%);
+    background: -o-linear-gradient(-15deg,  $orange 0%,darken($orange, 10%) 100%);
+    background: -ms-linear-gradient(-15deg,  $orange 0%,darken($orange, 10%) 100%);
+    background: linear-gradient(165deg,  $orange 0%,darken($orange, 10%) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$orange', endColorstr='darken($orange, 10%)',GradientType=1 );
+}

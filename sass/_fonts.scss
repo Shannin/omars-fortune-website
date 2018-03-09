@@ -1,0 +1,71 @@
+@font-face {
+    font-family: StickARound;
+    src: url('/fonts/Stick-A-Round.ttf');
+}
+
+.font--sans-serif {
+    font-family: 'Asap', 'Helvetica Neue', sans-serif;
+}
+
+.font--serif {
+    font-family: StickARound;
+}
+
+.font--stick-a-round {
+    font-family: StickARound;
+
+    -webkit-font-feature-settings:"liga" 0; 
+    font-feature-settings:"liga" 0; 
+    text-rendering: optimizeSpeed;
+     -webkit-font-variant-ligatures: no-common-ligatures;
+}
+
+
+.text-small {
+    font-size: 12px;
+}
+
+.text-plus {
+    font-size: 16px;
+}
+
+.text-large {
+    font-size: 18px;
+}
+
+.text-xl {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.text-regular {
+    font-weight: normal;
+}
+
+.text-medium {
+    font-weight: 500;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-black {
+    color: $black;
+}
+
+.text-gray {
+    color: $black-light;
+}
+
+.text-green {
+    color: $green;
+}
+
+.text--orange {
+    color: $orange;
+}
+
+.text--white {
+    color: $white;
+}

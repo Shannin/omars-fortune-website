@@ -1,0 +1,244 @@
+@import "variables";
+@import "fonts";
+@import "mixins";
+
+@import "buttons";
+@import "sections";
+@import "modals";
+@import "forms";
+
+@import "components/navbar";
+
+// Global Components
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+    @extend .font--sans-serif;
+}
+
+a {
+    @extend .transition-all;
+    text-decoration: none;
+
+    color: $blue;
+    &:hover,
+    &:focus {
+        color: darken($blue, 10%);
+    }
+
+    &.orange {
+        color: $orange-dark;
+
+        &:hover,
+        &:focus {
+            color: $orange-light;
+        }
+    }
+
+    &.white {
+        color: $white;
+
+        &:hover,
+        &:focus {
+            color: darken($white, 15%);
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @extend .font--serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 36px;
+
+    @media (min-width: 768px) and (min-height: 600px) {
+        font-size: 44px;
+    }
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.no-margin-tb {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.two-line-header-text {
+    @extend .font--serif;
+
+    h1 {
+        margin: 0;
+    }
+
+    span {
+        font-style: italic;
+        padding-left: 30px;
+        font-size: 26px;
+    }
+
+    @media (min-width: 768px) and (min-height: 600px) {
+        span {
+            padding-left: 40px;
+            font-size: 32px;
+        }
+    }
+}
+
+img.logo {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    z-index: 1000;
+}
+
+img.full-width {
+    width: 100%;
+}
+
+.spacer--small {
+    padding-top: 15px;
+}
+
+.spacer--medium {
+    padding-top: 30px;
+}
+
+
+// Homepage Header
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+
+    text-align: center;
+    color: white;
+
+    img.logo {
+        margin-bottom: 50px;
+    }
+
+    .header-content {
+        position: relative;
+        text-align: center;
+        padding: 65px 15px 65px;
+        width: 100%;
+        .header-content-inner {
+
+            h1 {
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-weight: 300;
+                color: transparentize(white, .1);
+                font-size: 16px;
+            }
+
+            .image-top {
+                width: 100%;
+                margin-top: -35%;
+                margin-bottom: -15%;
+            }
+
+            .image-right {
+                position: absolute;
+                height: 725px;
+                left: -15%;
+                top: -180px;
+            }
+
+        }
+    }
+    @media (min-width: 992px) and (min-height: 600px) {
+        min-height: 98%;
+
+        img.logo {
+            position: absolute;
+            margin: auto;
+            top: 8%;
+            left: 0;
+            right: 0;
+        }
+
+
+        .header-content {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            padding: 0 50px;
+            .header-content-inner {
+                margin-left: auto;
+                margin-right: auto;
+
+                h1 {
+                    font-size: 58px;
+                }
+
+                p {
+                    font-size: 17px;
+                    margin-bottom: 40px;
+                }
+
+                .image-top {
+                    width: 100%;
+                    margin-top: 5%;
+                }
+            }
+        }
+    }
+}
+
+.text-sm {
+    font-size: 12px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+// Vendor Page
+
+.color-box {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 20px;
+
+    .details {
+        width: 85%;
+        padding-top:70%;
+
+        text-align: right;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+// Bootstrap Overrides
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
