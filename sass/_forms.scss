@@ -91,6 +91,13 @@ form {
     }
 }
 
+
+.form--black {
+    .form-control {
+        border-color: $black-light;
+    }
+}
+
 .form--blue {
     .form-group {
         .form-control {
@@ -99,15 +106,11 @@ form {
     }
 }
 
-.form--orange {
-    .form-control {
-        border-color: $orange;
-    }
-}
-
-.form--orange-dark {
-    .form-control {
-        border-color: darken($orange, 20%);
+.form--purple {
+    .form-group {
+        .form-control {
+            border-color: lighten($purple, 10%);
+        }
     }
 }
 
@@ -139,3 +142,19 @@ form {
 }
 
 
+
+
+
+
+
+.form--orange {
+    .form-control {
+        border-color: $orange;
+    }
+}
+
+.form--orange-dark {
+    .form-control {
+        border-color: darken($orange, 20%);
+    }
+}

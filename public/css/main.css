@@ -43,10 +43,10 @@ h6, .two-line-header-text {
   font-weight: bold; }
 
 .text-black {
-  color: #333; }
+  color: #222; }
 
 .text-gray {
-  color: #494949; }
+  color: #444; }
 
 .text-green {
   color: #169949; }
@@ -57,7 +57,7 @@ h6, .two-line-header-text {
 .text--white {
   color: #FFF; }
 
-.transition-all, .button--blue, .button--orange, .navbar-default, .navbar-default .navbar--brand img, a {
+.transition-all, .button--blue, .button--purple, .button--orange, .navbar-default, .navbar-default .navbar--brand img, a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s; }
@@ -89,6 +89,23 @@ h6, .two-line-header-text {
     border-color: #1d2854; }
   .button--blue .badge {
     color: #1d2854;
+    background-color: #FFF; }
+
+.button--purple {
+  color: #FFF;
+  background-color: #49177d;
+  border-color: #49177d; }
+  .button--purple:hover, .button--purple:focus, .button--purple.focus, .button--purple:active, .button--purple.active {
+    color: #FFF;
+    background-color: #3c1367;
+    border-color: #37115f; }
+  .button--purple:active, .button--purple.active {
+    background-image: none; }
+  .button--purple.disabled, .button--purple.disabled:hover, .button--purple.disabled:focus, .button--purple.disabled.focus, .button--purple.disabled:active, .button--purple.disabled.active, .button--purple[disabled], .button--purple[disabled]:hover, .button--purple[disabled]:focus, .button--purple[disabled].focus, .button--purple[disabled]:active, .button--purple[disabled].active, fieldset[disabled] .button--purple, fieldset[disabled] .button--purple:hover, fieldset[disabled] .button--purple:focus, fieldset[disabled] .button--purple.focus, fieldset[disabled] .button--purple:active, fieldset[disabled] .button--purple.active {
+    background-color: #49177d;
+    border-color: #49177d; }
+  .button--purple .badge {
+    color: #49177d;
     background-color: #FFF; }
 
 .button--orange {
@@ -148,7 +165,7 @@ footer {
   overflow: hidden; }
 
 .section--black {
-  background-color: #333;
+  background-color: #222;
   color: #FFF; }
 
 .section--image {
@@ -196,7 +213,7 @@ footer {
 
 .section--gray {
   background-color: #f0f0f0;
-  color: #333; }
+  color: #222; }
 
 .section--orange {
   background-color: #fda228;
@@ -250,7 +267,7 @@ footer {
         max-width: 100%; }
     .modal-custom .modal__content .modal__content__body {
       padding: 30px 10px;
-      color: #333;
+      color: #222;
       font-size: 16px; }
     .modal-custom .modal__content .modal__content__buttons {
       position: absolute;
@@ -326,14 +343,14 @@ form .form-group.error .form-control {
 .form--large .form-group button {
   margin-top: 5px; }
 
+.form--black .form-control {
+  border-color: #444; }
+
 .form--blue .form-group .form-control {
   border-color: #2a3a7a; }
 
-.form--orange .form-control {
-  border-color: #fda228; }
-
-.form--orange-dark .form-control {
-  border-color: #bd6d02; }
+.form--purple .form-group .form-control {
+  border-color: #621fa8; }
 
 .form--transparent-dark .form-control {
   background-color: transparent;
@@ -350,6 +367,12 @@ form .form-group.error .form-control {
     color: #d77c02; }
 .form--transparent-dark button {
   background-color: #d77c02; }
+
+.form--orange .form-control {
+  border-color: #fda228; }
+
+.form--orange-dark .form-control {
+  border-color: #bd6d02; }
 
 .navbar-default {
   background-color: rgba(255, 255, 255, 0.7);
@@ -442,6 +465,10 @@ img.full-width {
 
 .spacer--medium {
   padding-top: 30px; }
+
+hr.dark {
+  color: #444;
+  border-color: #444; }
 
 header {
   position: relative;

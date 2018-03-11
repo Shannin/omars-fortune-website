@@ -121,6 +121,13 @@ img.full-width {
     padding-top: 30px;
 }
 
+hr {
+    &.dark {
+        color: $black-light;
+        border-color: $black-light;
+    }
+}
+
 
 // Homepage Header
 
