@@ -79,3 +79,11 @@ footer {
     background-color: $purple;
     color: $white;
 }
+
+.section--purple-gradient {
+    background: #572c89;
+    background: -moz-linear-gradient(top, #572c89 0%, #49177d 65%, #29064f 100%);
+    background: -webkit-linear-gradient(top, #572c89 0%,#49177d 65%,#29064f 100%);
+    background: linear-gradient(to bottom, #572c89 0%,#49177d 65%,#29064f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#572c89', endColorstr='#29064f',GradientType=0 );
+}
