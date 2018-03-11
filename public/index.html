@@ -65,22 +65,7 @@
                                     <p>Description</b></p>
                                 </div>
                                 <div class="row">
-                                    <form id="cta-newsletter" class="newsletter-form form--orange form--transparent-dark form--medium" action="/api/newsletter"  method="POST">
-                                        <input type="hidden" name="emailList" value="7118ddea20">
-
-                                        <div class="newsletter-form__form row">
-                                            <div class="col-md-8 col-md-offset-1 form-group no-margin-tb">
-                                                <input type="email" class="form-control" name="email" placeholder="Email Address">
-                                            </div>
-                                            <div class="col-md-2 form-group no-margin-tb text-center">
-                                                <button type="submit" class="button button--orange">Add Me!</button>
-                                            </div>  
-                                        </div>
-
-                                        <div class="newsletter-form__success-message row text-green text-center" style="padding-bottom: 1px; display: none;">
-                                            <h4 class="font--sans-serif"><b>Thanks!</b> You will be the first receive updates about <span class="nowrap">Omar Speaks</span>!</h4>
-                                        </div>
-                                    </form>
+                                    
                                 </div>
                             </div>
                             <div class="hidden-xs hidden-sm col-md-5 text-center">
@@ -91,6 +76,30 @@
                 </div>
             </div>
         </header>
+        <section class="section--purple section--padded-medium">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <form id="cta-newsletter" class="newsletter-form form--purple form--large" action="/api/newsletter"  method="POST">
+                            <input type="hidden" name="emailList" value="7118ddea20">
+
+                            <div class="newsletter-form__form row">
+                                <div class="col-md-8 col-md-offset-1 form-group no-margin-tb">
+                                    <input type="email" class="form-control" name="email" placeholder="Email Address">
+                                </div>
+                                <div class="col-md-2 form-group no-margin-tb text-center">
+                                    <button type="submit" class="button button--orange">Add Me!</button>
+                                </div>  
+                            </div>
+
+                            <div class="newsletter-form__success-message row text-green text-center" style="padding-bottom: 1px; display: none;">
+                                <h4 class="font--sans-serif"><b>Thanks!</b> You will be the first receive updates about <span class="nowrap">Omar Speaks</span>!</h4>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div class="section--image section--image__left" style="background-image: url('img/');">
             <div class="container text-center">

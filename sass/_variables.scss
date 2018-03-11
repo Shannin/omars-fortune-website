@@ -13,9 +13,10 @@ $green: #169949;
 $green-light: #3fb34f;
 
 $gray: #f0f0f0;
-$grey-dark: #cecece;
+$gray-dark: #cecece;
 
 $purple: #49177d;
+$purple-light: lighten($purple, 10%);
 $purple-dark: darken($purple, 10%);
 
 $red: #FF0000;

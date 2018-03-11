@@ -169,6 +169,10 @@ footer {
   background-color: #f0f0f0;
   color: #222; }
 
+.section--purple {
+  background-color: #49177d;
+  color: #FFF; }
+
 .modal-custom {
   position: fixed;
   top: 0;
@@ -279,7 +283,30 @@ form .form-group.error .form-control {
   border-color: #2a3a7a; }
 
 .form--purple .form-group .form-control {
+  border-color: #300f52; }
+
+.form--purple-light .form-group .form-control {
   border-color: #621fa8; }
+
+.form--transparent .form-control {
+  background-color: transparent;
+  border-color: #FFF;
+  color: #FFF; }
+  .form--transparent .form-control label {
+    color: #cecece; }
+  .form--transparent .form-control::-webkit-input-placeholder {
+    color: #FFF; }
+  .form--transparent .form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: #FFF; }
+  .form--transparent .form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #FFF; }
+  .form--transparent .form-control:-ms-input-placeholder {
+    color: #FFF; }
+.form--transparent button {
+  background-color: #FFF;
+  color: #222; }
 
 .form--transparent-dark .form-control {
   background-color: transparent;
