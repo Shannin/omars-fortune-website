@@ -27,49 +27,6 @@
     @include button-variant($white, $purple, $purple);
 }
 
-
-
-
-
-
-
-.button--orange {
-    @include button-variant($white, $orange, $orange);
-}
-
-.button--orange-gradient {
-    color: $white;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px rgba(150, 84, 6, 0.1);
-
-    -moz-box-shadow:inset 0px 1px 0px 0px lighten($orange-dark, 25%);
-    -webkit-box-shadow:inset 0px 1px 0px 0px lighten($orange-dark, 25%);
-    box-shadow:inset 0px 1px 0px 0px lighten($orange-dark, 25%);
-
-    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, $orange), color-stop(1, darken($orange, 10%)));
-    background:-moz-linear-gradient(top, $orange 5%, darken($orange, 10%) 100%);
-    background:-webkit-linear-gradient(top, $orange 5%, darken($orange, 10%) 100%);
-    background:-o-linear-gradient(top, $orange 5%, darken($orange, 10%) 100%);
-    background:-ms-linear-gradient(top, $orange 5%, darken($orange, 10%) 100%);
-    background:linear-gradient(to bottom, $orange 5%, darken($orange, 10%) 100%);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='$orange', endColorstr='darken($orange, 10%)',GradientType=0);
-    background-color:$orange;
-
-    &:hover {
-        color: $white;
-
-        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, $orange-dark), color-stop(1, $orange));
-        background:-moz-linear-gradient(top, $orange-dark 5%, $orange 100%);
-        background:-webkit-linear-gradient(top, $orange-dark 5%, $orange 100%);
-        background:-o-linear-gradient(top, $orange-dark 5%, $orange 100%);
-        background:-ms-linear-gradient(top, $orange-dark 5%, $orange 100%);
-        background:linear-gradient(to bottom, $orange-dark 5%, $orange 100%);
-        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='$orange-dark', endColorstr='$orange',GradientType=0);
-        background-color:$orange-dark;
-    }
-}
-
-
 .button-xl {
     width: 100%;
     max-width: 240px;

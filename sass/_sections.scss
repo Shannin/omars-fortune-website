@@ -7,21 +7,6 @@ footer {
     overflow: hidden; 
 }
 
-.section--black {
-    background-color: $black;
-    color: $white;
-}
-
-
-
-
-
-
-
-
-
-
-
 .section--image {
     background-position: bottom center;
     background-size: cover;
@@ -61,9 +46,10 @@ footer {
 }
 
 
-
-
-
+.section--black {
+    background-color: $black;
+    color: $white;
+}
 
 .section--blue {
     background-color: $blue;
@@ -87,33 +73,4 @@ footer {
 .section--gray {
     background-color: $gray;
     color: $black;
-}
-
-.section--orange {
-    background-color: $orange;
-    color: $white;
-}
-
-.section--orange-gradient {
-    background: $orange-light;
-    background: -moz-linear-gradient(-45deg,  $orange-light 0%, $orange 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,$orange-light), color-stop(100%,$orange));
-    background: -webkit-linear-gradient(-45deg,  $orange-light 0%,$orange 100%);
-    background: -o-linear-gradient(-45deg,  $orange-light 0%,$orange 100%);
-    background: -ms-linear-gradient(-45deg,  $orange-light 0%,$orange 100%);
-    background: linear-gradient(135deg,  $orange-light 0%,$orange 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$orange-light', endColorstr='$orange',GradientType=1 );
-}
-
-.section--orange-gradient-dark {
-    color: $white;
-
-    background: darken($orange, 10%);
-    background: -moz-linear-gradient(-15deg,  $orange 0%, darken($orange, 10%) 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,$orange), color-stop(100%,darken($orange, 10%)));
-    background: -webkit-linear-gradient(-15deg,  $orange 0%,darken($orange, 10%) 100%);
-    background: -o-linear-gradient(-15deg,  $orange 0%,darken($orange, 10%) 100%);
-    background: -ms-linear-gradient(-15deg,  $orange 0%,darken($orange, 10%) 100%);
-    background: linear-gradient(165deg,  $orange 0%,darken($orange, 10%) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$orange', endColorstr='darken($orange, 10%)',GradientType=1 );
 }

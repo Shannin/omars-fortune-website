@@ -28,15 +28,6 @@ a {
         color: darken($blue, 10%);
     }
 
-    &.orange {
-        color: $orange-dark;
-
-        &:hover,
-        &:focus {
-            color: $orange-light;
-        }
-    }
-
     &.white {
         color: $white;
 

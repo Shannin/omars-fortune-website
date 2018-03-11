@@ -51,13 +51,10 @@ h6, .two-line-header-text {
 .text-green {
   color: #169949; }
 
-.text--orange {
-  color: #fda228; }
-
 .text--white {
   color: #FFF; }
 
-.transition-all, .button--blue, .button--purple, .button--orange, .navbar-default, .navbar-default .navbar--brand img, a {
+.transition-all, .button--blue, .button--purple, .navbar-default, .navbar-default .navbar--brand img, a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s; }
@@ -108,49 +105,6 @@ h6, .two-line-header-text {
     color: #49177d;
     background-color: #FFF; }
 
-.button--orange {
-  color: #FFF;
-  background-color: #fda228;
-  border-color: #fda228; }
-  .button--orange:hover, .button--orange:focus, .button--orange.focus, .button--orange:active, .button--orange.active {
-    color: #FFF;
-    background-color: #fd970f;
-    border-color: #fd9305; }
-  .button--orange:active, .button--orange.active {
-    background-image: none; }
-  .button--orange.disabled, .button--orange.disabled:hover, .button--orange.disabled:focus, .button--orange.disabled.focus, .button--orange.disabled:active, .button--orange.disabled.active, .button--orange[disabled], .button--orange[disabled]:hover, .button--orange[disabled]:focus, .button--orange[disabled].focus, .button--orange[disabled]:active, .button--orange[disabled].active, fieldset[disabled] .button--orange, fieldset[disabled] .button--orange:hover, fieldset[disabled] .button--orange:focus, fieldset[disabled] .button--orange.focus, fieldset[disabled] .button--orange:active, fieldset[disabled] .button--orange.active {
-    background-color: #fda228;
-    border-color: #fda228; }
-  .button--orange .badge {
-    color: #fda228;
-    background-color: #FFF; }
-
-.button--orange-gradient {
-  color: #FFF;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px rgba(150, 84, 6, 0.1);
-  -moz-box-shadow: inset 0px 1px 0px 0px #fdb85b;
-  -webkit-box-shadow: inset 0px 1px 0px 0px #fdb85b;
-  box-shadow: inset 0px 1px 0px 0px #fdb85b;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fda228), color-stop(1, #f08a02));
-  background: -moz-linear-gradient(top, #fda228 5%, #f08a02 100%);
-  background: -webkit-linear-gradient(top, #fda228 5%, #f08a02 100%);
-  background: -o-linear-gradient(top, #fda228 5%, #f08a02 100%);
-  background: -ms-linear-gradient(top, #fda228 5%, #f08a02 100%);
-  background: linear-gradient(to bottom, #fda228 5%, #f08a02 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$orange', endColorstr='darken($orange, 10%)',GradientType=0);
-  background-color: #fda228; }
-  .button--orange-gradient:hover {
-    color: #FFF;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d77c02), color-stop(1, #fda228));
-    background: -moz-linear-gradient(top, #d77c02 5%, #fda228 100%);
-    background: -webkit-linear-gradient(top, #d77c02 5%, #fda228 100%);
-    background: -o-linear-gradient(top, #d77c02 5%, #fda228 100%);
-    background: -ms-linear-gradient(top, #d77c02 5%, #fda228 100%);
-    background: linear-gradient(to bottom, #d77c02 5%, #fda228 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$orange-dark', endColorstr='$orange',GradientType=0);
-    background-color: #d77c02; }
-
 .button-xl {
   width: 100%;
   max-width: 240px;
@@ -163,10 +117,6 @@ section,
 footer {
   padding: 15px 0px;
   overflow: hidden; }
-
-.section--black {
-  background-color: #222;
-  color: #FFF; }
 
 .section--image {
   background-position: bottom center;
@@ -195,6 +145,10 @@ footer {
 .section--padded-xl {
   padding: 100px 0px; }
 
+.section--black {
+  background-color: #222;
+  color: #FFF; }
+
 .section--blue {
   background-color: #1d2854;
   color: #FFF; }
@@ -214,31 +168,6 @@ footer {
 .section--gray {
   background-color: #f0f0f0;
   color: #222; }
-
-.section--orange {
-  background-color: #fda228;
-  color: #FFF; }
-
-.section--orange-gradient {
-  background: #fbc543;
-  background: -moz-linear-gradient(-45deg, #fbc543 0%, #fda228 100%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #fbc543), color-stop(100%, #fda228));
-  background: -webkit-linear-gradient(-45deg, #fbc543 0%, #fda228 100%);
-  background: -o-linear-gradient(-45deg, #fbc543 0%, #fda228 100%);
-  background: -ms-linear-gradient(-45deg, #fbc543 0%, #fda228 100%);
-  background: linear-gradient(135deg, #fbc543 0%, #fda228 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$orange-light', endColorstr='$orange',GradientType=1 ); }
-
-.section--orange-gradient-dark {
-  color: #FFF;
-  background: #f08a02;
-  background: -moz-linear-gradient(-15deg, #fda228 0%, #f08a02 100%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #fda228), color-stop(100%, #f08a02));
-  background: -webkit-linear-gradient(-15deg, #fda228 0%, #f08a02 100%);
-  background: -o-linear-gradient(-15deg, #fda228 0%, #f08a02 100%);
-  background: -ms-linear-gradient(-15deg, #fda228 0%, #f08a02 100%);
-  background: linear-gradient(165deg, #fda228 0%, #f08a02 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$orange', endColorstr='darken($orange, 10%)',GradientType=1 ); }
 
 .modal-custom {
   position: fixed;
@@ -354,25 +283,20 @@ form .form-group.error .form-control {
 
 .form--transparent-dark .form-control {
   background-color: transparent;
+  border-color: #300f52;
   color: #FFF; }
   .form--transparent-dark .form-control::-webkit-input-placeholder {
-    color: #d77c02; }
+    color: #FFF; }
   .form--transparent-dark .form-control:-moz-placeholder {
     /* Firefox 18- */
-    color: #d77c02; }
+    color: #FFF; }
   .form--transparent-dark .form-control::-moz-placeholder {
     /* Firefox 19+ */
-    color: #d77c02; }
+    color: #FFF; }
   .form--transparent-dark .form-control:-ms-input-placeholder {
-    color: #d77c02; }
+    color: #FFF; }
 .form--transparent-dark button {
-  background-color: #d77c02; }
-
-.form--orange .form-control {
-  border-color: #fda228; }
-
-.form--orange-dark .form-control {
-  border-color: #bd6d02; }
+  background-color: #300f52; }
 
 .navbar-default {
   background-color: rgba(255, 255, 255, 0.7);
@@ -404,10 +328,6 @@ a {
   color: #1d2854; }
   a:hover, a:focus {
     color: #10162e; }
-  a.orange {
-    color: #d77c02; }
-    a.orange:hover, a.orange:focus {
-      color: #fbc543; }
   a.white {
     color: #FFF; }
     a.white:hover, a.white:focus {

@@ -117,44 +117,27 @@ form {
 .form--transparent-dark {
     .form-control {
         background-color: transparent;
+        border-color: $purple-dark;
         color: $white;
 
         &::-webkit-input-placeholder {
-           color: $orange-dark;
+           color: $white;
         }
 
         &:-moz-placeholder { /* Firefox 18- */
-           color: $orange-dark;  
+           color: $white;  
         }
 
         &::-moz-placeholder {  /* Firefox 19+ */
-           color: $orange-dark;  
+           color: $white;  
         }
 
         &:-ms-input-placeholder {
-           color: $orange-dark;
+           color: $white;
         }
     }
 
     button {
-        background-color: $orange-dark;
-    }
-}
-
-
-
-
-
-
-
-.form--orange {
-    .form-control {
-        border-color: $orange;
-    }
-}
-
-.form--orange-dark {
-    .form-control {
-        border-color: darken($orange, 20%);
+        background-color: $purple-dark;
     }
 }
