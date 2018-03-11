@@ -27,6 +27,10 @@
     @include button-variant($white, $purple, $purple);
 }
 
+.button--white {
+    @include button-variant($black-light, $white, $white);
+}
+
 .button-xl {
     width: 100%;
     max-width: 240px;

@@ -1,6 +1,6 @@
 @font-face {
-  font-family: StickARound;
-  src: url("/fonts/Stick-A-Round.ttf"); }
+  font-family: Charlemagne;
+  src: url("/fonts/CharlemagneStd-Bold.otf"); }
 .font--sans-serif, .button, html,
 body {
   font-family: 'Asap', 'Helvetica Neue', sans-serif; }
@@ -11,10 +11,10 @@ h3,
 h4,
 h5,
 h6, .two-line-header-text {
-  font-family: StickARound; }
+  font-family: Charlemagne; }
 
-.font--stick-a-round {
-  font-family: StickARound;
+.font--charlemagne {
+  font-family: Charlemagne;
   -webkit-font-feature-settings: "liga" 0;
   font-feature-settings: "liga" 0;
   text-rendering: optimizeSpeed;
@@ -54,7 +54,7 @@ h6, .two-line-header-text {
 .text--white {
   color: #FFF; }
 
-.transition-all, .button--blue, .button--purple, .navbar-default, .navbar-default .navbar--brand img, a {
+.transition-all, .button--blue, .button--purple, .button--white, .navbar-default, .navbar-default .navbar--brand img, a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s; }
@@ -104,6 +104,23 @@ h6, .two-line-header-text {
   .button--purple .badge {
     color: #49177d;
     background-color: #FFF; }
+
+.button--white {
+  color: #444;
+  background-color: #FFF;
+  border-color: #FFF; }
+  .button--white:hover, .button--white:focus, .button--white.focus, .button--white:active, .button--white.active {
+    color: #444;
+    background-color: #f2f2f2;
+    border-color: #ededed; }
+  .button--white:active, .button--white.active {
+    background-image: none; }
+  .button--white.disabled, .button--white.disabled:hover, .button--white.disabled:focus, .button--white.disabled.focus, .button--white.disabled:active, .button--white.disabled.active, .button--white[disabled], .button--white[disabled]:hover, .button--white[disabled]:focus, .button--white[disabled].focus, .button--white[disabled]:active, .button--white[disabled].active, fieldset[disabled] .button--white, fieldset[disabled] .button--white:hover, fieldset[disabled] .button--white:focus, fieldset[disabled] .button--white.focus, fieldset[disabled] .button--white:active, fieldset[disabled] .button--white.active {
+    background-color: #FFF;
+    border-color: #FFF; }
+  .button--white .badge {
+    color: #FFF;
+    background-color: #444; }
 
 .button-xl {
   width: 100%;
@@ -166,7 +183,7 @@ footer {
   color: #FFF; }
 
 .section--gray {
-  background-color: #f0f0f0;
+  background-color: #cecece;
   color: #222; }
 
 .section--purple {
@@ -377,10 +394,11 @@ h6 {
   margin-bottom: 10px; }
 
 h1 {
-  font-size: 36px; }
+  font-size: 20px;
+  letter-spacing: .15em; }
   @media (min-width: 768px) and (min-height: 600px) {
     h1 {
-      font-size: 44px; } }
+      font-size: 32px; } }
 
 p {
   font-size: 16px;
@@ -438,21 +456,25 @@ header {
     padding: 65px 15px 65px;
     width: 100%; }
     header .header-content .header-content-inner h1 {
-      font-size: 40px;
+      font-size: 34px;
       margin-bottom: 30px; }
     header .header-content .header-content-inner p {
       font-weight: 300;
       color: rgba(255, 255, 255, 0.9);
       font-size: 16px; }
-    header .header-content .header-content-inner .image-top {
-      width: 100%;
-      margin-top: -35%;
-      margin-bottom: -15%; }
-    header .header-content .header-content-inner .image-right {
+    header .header-content .header-content-inner .iPhoneX-wrapper--top {
+      position: relative;
+      margin: 0% 15% 10% 15%; }
+      header .header-content .header-content-inner .iPhoneX-wrapper--top .cover {
+        width: 100%; }
+    header .header-content .header-content-inner .iPhoneX-wrapper--right {
       position: absolute;
-      height: 725px;
-      left: -15%;
+      height: 500px;
+      width: 50%;
+      left: 15%;
       top: -180px; }
+      header .header-content .header-content-inner .iPhoneX-wrapper--right .cover {
+        width: 100%; }
   @media (min-width: 992px) and (min-height: 600px) {
     header {
       min-height: 92%; }
@@ -473,7 +495,7 @@ header {
           margin-left: auto;
           margin-right: auto; }
           header .header-content .header-content-inner h1 {
-            font-size: 58px; }
+            font-size: 44px; }
           header .header-content .header-content-inner p {
             font-size: 17px;
             margin-bottom: 40px; }

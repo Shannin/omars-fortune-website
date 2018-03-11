@@ -50,10 +50,11 @@ h6 {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 20px;
+    letter-spacing: .15em;
 
     @media (min-width: 768px) and (min-height: 600px) {
-        font-size: 44px;
+        font-size: 32px;
     }
 }
 
@@ -142,7 +143,7 @@ header {
         .header-content-inner {
 
             h1 {
-                font-size: 40px;
+                font-size: 34px;
                 margin-bottom: 30px;
             }
 
@@ -152,17 +153,26 @@ header {
                 font-size: 16px;
             }
 
-            .image-top {
-                width: 100%;
-                margin-top: -35%;
-                margin-bottom: -15%;
+            .iPhoneX-wrapper--top {
+                position: relative;
+                margin: 0% 15% 10% 15%;
+
+                .cover {
+                    width: 100%;
+                }
             }
 
-            .image-right {
+            .iPhoneX-wrapper--right {
                 position: absolute;
-                height: 725px;
-                left: -15%;
+                height: 500px;
+                width: 50%;
+
+                left: 15%;
                 top: -180px;
+
+                .cover {
+                    width: 100%;
+                }
             }
 
         }
@@ -191,7 +201,7 @@ header {
                 margin-right: auto;
 
                 h1 {
-                    font-size: 58px;
+                    font-size: 44px;
                 }
 
                 p {

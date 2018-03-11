@@ -1,6 +1,6 @@
 @font-face {
-    font-family: StickARound;
-    src: url('/fonts/Stick-A-Round.ttf');
+    font-family: Charlemagne;
+    src: url('/fonts/CharlemagneStd-Bold.otf');
 }
 
 .font--sans-serif {
@@ -8,11 +8,11 @@
 }
 
 .font--serif {
-    font-family: StickARound;
+    font-family: Charlemagne;
 }
 
-.font--stick-a-round {
-    font-family: StickARound;
+.font--charlemagne {
+    font-family: Charlemagne;
 
     -webkit-font-feature-settings:"liga" 0; 
     font-feature-settings:"liga" 0; 
