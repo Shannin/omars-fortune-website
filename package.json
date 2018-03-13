@@ -1,7 +1,7 @@
 {
-  "name": "omar-speaks-website",
+  "name": "omars-fortune-website",
   "version": "1.0.0",
-  "description": "A static website for the Omar Speaks iOS app",
+  "description": "A static website for the Omar's Fortune iOS app",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
