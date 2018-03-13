@@ -133,5 +133,5 @@ app.get('/', function(req, res) {
 
 
 app.listen(server_port, function() {
-  console.log("Listening on " + server_ip_address + ": " + server_port);
+  console.log("Listening on " + server_port);
 });
