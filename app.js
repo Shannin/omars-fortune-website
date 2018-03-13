@@ -6,8 +6,7 @@ var path = require('path');
 var validator = require('validator');
 
 var apiKey = process.env.MAILCHIMP_API_KEY || 'a544f296627f3988d034230b76bba7bc-us11';
-var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
-var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
+var server_port = process.env.PORT || 8080
 var public_dir = './public/'
 
 
@@ -141,6 +140,6 @@ app.get('/', function(req, res) {
 });
 
 
-app.listen(server_port, server_ip_address, function(){
+app.listen(server_port, function(){
   console.log("Listening on " + server_ip_address + ": " + server_port);
 });
