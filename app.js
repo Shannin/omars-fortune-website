@@ -100,12 +100,7 @@ app.post('/api/contact', function(req, res) {
         var from = values.email;
     }
 
-    var subject = 'Contact Form Submission: ';
-    if (values.company !== '') {
-        subject += values.company + ' - ' + values.email;
-    } else {
-        subject += values.email;
-    }
+    var subject = 'Contact Form Submission: ' + values.email;
 
     var mailOptions = {
         from: from,
