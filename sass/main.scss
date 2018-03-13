@@ -153,30 +153,39 @@ header {
                 font-size: 16px;
             }
 
-            .iPhoneX-wrapper--top {
-                position: relative;
-                margin: 0% 15% 10% 15%;
+            .iPhoneX-wrapper {
+                &.iPhoneX-wrapper--top {
+                    position: relative;
+                    margin: 0% 15% 10% 15%;
+                }
 
-                .cover {
+                &.iPhoneX-wrapper--right {
+                    position: absolute;
+                    height: 500px;
+                    width: 50%;
+
+                    top: -180px;
+                }
+
+                .device {
+                    position: absolute;
                     width: 100%;
+                    left: 0;
+                    z-index: 100;
+                }
+
+                .screen {
+                    position: absolute;
+                    width: 90%;
+                    margin-left: 5%;
+                    margin-top: 5%;
+                    left: 0;
+                    z-index: 99;
                 }
             }
-
-            .iPhoneX-wrapper--right {
-                position: absolute;
-                height: 500px;
-                width: 50%;
-
-                left: 15%;
-                top: -180px;
-
-                .cover {
-                    width: 100%;
-                }
-            }
-
         }
     }
+
     @media (min-width: 992px) and (min-height: 600px) {
         min-height: 92%;
 

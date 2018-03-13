@@ -17,9 +17,17 @@
         } else {
             $('#mainNav').removeClass('visible');
         }
+
+        console.log($('.iPhoneX-wrapper--top').height())
+
+        $('.iPhoneX-wrapper--top').height($('.iPhoneX-wrapper--top > .screen').height())
     }
 
     $(window).scroll(function(){
+        adjustPage();        
+    });
+
+    $(window).resize(function(){
         adjustPage();        
     });
 
@@ -86,7 +94,6 @@
 
         var nameInput = $('input[name="name"]', form);
         var emailInput = $('input[name="email"]', form);
-        var companyInput = $('input[name="company"]', form);
         var commentInput = $('textarea[name="comment"]', form);
         var submitBtn = $('button[type="submit"]', form);
 
@@ -124,7 +131,6 @@
 
                 nameInput.val('');
                 emailInput.val('');
-                companyInput.val('');
                 commentInput.val('');
             });
         }

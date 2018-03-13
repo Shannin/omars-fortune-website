@@ -111,7 +111,7 @@ app.post('/api/contact', function(req, res) {
     var mailOptions = {
         from: from,
         replyTo: from,
-        to: 'info@orange-u-glad.com',
+        to: 'info@omarspeaks.com',
         subject:  subject,
         text: values.comment,
     };
