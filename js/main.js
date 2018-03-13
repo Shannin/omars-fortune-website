@@ -18,8 +18,6 @@
             $('#mainNav').removeClass('visible');
         }
 
-        console.log($('.iPhoneX-wrapper--top').height())
-
         $('.iPhoneX-wrapper--top').height($('.iPhoneX-wrapper--top > .screen').height())
     }
 
