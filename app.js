@@ -127,19 +127,11 @@ app.post('/api/contact', function(req, res) {
 });
 
 
-app.get('/labs', function(req, res) {
-    res.sendfile(public_dir + 'labs.html');
-});
-
-app.get('/vendor', function(req, res) {
-    res.sendfile(public_dir + 'vendor.html');
-});
-
 app.get('/', function(req, res) {
     res.sendfile(public_dir);
 });
 
 
-app.listen(server_port, function(){
+app.listen(server_port, function() {
   console.log("Listening on " + server_ip_address + ": " + server_port);
 });

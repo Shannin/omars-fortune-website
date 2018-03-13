@@ -9,6 +9,9 @@
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "4.8.4"
+  },
   "dependencies": {
     "body-parser": "^1.14.1",
     "bootstrap-sass": "^3.3.5",
