@@ -6,7 +6,7 @@ var path = require('path')
 var validator = require('validator')
 
 var apiKey = process.env.MAILCHIMP_API_KEY || 'a544f296627f3988d034230b76bba7bc-us11'
-var server_port = process.env.PORT || 8080
+var server_port = process.env.PORT || 7535
 var public_dir = './public/'
 
 
