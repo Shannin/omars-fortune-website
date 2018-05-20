@@ -1,7 +1,7 @@
 {
-  "name": "omars-fortune-website",
+  "name": "pocket-jesus-website",
   "version": "1.0.0",
-  "description": "A static website for the Omar's Fortune iOS app",
+  "description": "A static website for the Pocket Jesus AR iOS app",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
