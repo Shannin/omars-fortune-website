@@ -4,6 +4,7 @@ var MailChimpAPI = require('mailchimp').MailChimpAPI;
 var nodemailer = require('nodemailer');
 var path = require('path');
 var validator = require('validator');
+require('dotenv').config();
 
 var apiKey = process.env.MAILCHIMP_API_KEY || 'a544f296627f3988d034230b76bba7bc-us11';
 var server_port = process.env.PORT || 8080
