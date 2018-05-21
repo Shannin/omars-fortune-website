@@ -2,32 +2,29 @@ var bodyParser = require('body-parser')
 var express = require('express')
 var MailChimpAPI = require('mailchimp').MailChimpAPI
 var nodemailer = require('nodemailer')
+var sgTransport = require('nodemailer-sendgrid-transport')
 var path = require('path')
 var validator = require('validator')
 require('dotenv').config()
 
-var apiKey = process.env.MAILCHIMP_API_KEY || 'a544f296627f3988d034230b76bba7bc-us11'
 var server_port = process.env.PORT || 8080
 var public_dir = './public/'
-
 
 var app = express()
 app.use(express.static(__dirname + '/public'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
-
 app.use('/img', express.static(__dirname + '/img'))
 
+var mailchimpKey = process.env.MAILCHIMP_API_KEY || 'a544f296627f3988d034230b76bba7bc-us11'
+var mailchimp = MailChimpAPI(mailchimpKey, { version : '2.0' })
 
-var mailchimp = MailChimpAPI(apiKey, { version : '2.0' })
-
-var mailer = nodemailer.createTransport({
-    service: 'SendGrid',
-    auth: {
-        user: process.env.EMAIL_MAILER_USER,
-        pass: process.env.EMAIL_MAILER_PASS
-    }
-})
+var mailer = nodemailer.createTransport(sgTransport({
+  auth: {
+    api_user: process.env.EMAIL_MAILER_USER,
+    api_key: process.env.EMAIL_MAILER_PASS
+  }
+}))
 
 
 app.post('/api/newsletter', function(req, res) {
