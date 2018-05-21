@@ -17,8 +17,8 @@ app.use('/img', express.static(__dirname + '/img'))
 var mailchimpKey = process.env.MAILCHIMP_API_KEY || 'a544f296627f3988d034230b76bba7bc-us11'
 var mailchimp = MailChimpAPI(mailchimpKey, { version : '2.0' })
 
-const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+var sendgrid = require('@sendgrid/mail')
+sendgrid.setApiKey(process.env.SENDGRID_API_KEY)
 
 app.post('/api/newsletter', function(req, res) {
     var values = req.body
