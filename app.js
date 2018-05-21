@@ -1,8 +1,6 @@
 var bodyParser = require('body-parser')
 var express = require('express')
 var MailChimpAPI = require('mailchimp').MailChimpAPI
-var nodemailer = require('nodemailer')
-var sgTransport = require('nodemailer-sendgrid-transport')
 var path = require('path')
 var validator = require('validator')
 require('dotenv').config()
@@ -19,12 +17,8 @@ app.use('/img', express.static(__dirname + '/img'))
 var mailchimpKey = process.env.MAILCHIMP_API_KEY || 'a544f296627f3988d034230b76bba7bc-us11'
 var mailchimp = MailChimpAPI(mailchimpKey, { version : '2.0' })
 
-var mailer = nodemailer.createTransport(sgTransport({
-  auth: {
-    api_user: process.env.EMAIL_MAILER_USER,
-    api_key: process.env.EMAIL_MAILER_PASS
-  }
-}))
+var sendgrid = require('@sendgrid/mail')
+sendgrid.setApiKey(process.env.SENDGRID_API_KEY)
 
 
 app.post('/api/newsletter', function(req, res) {
@@ -100,15 +94,14 @@ app.post('/api/contact', function(req, res) {
 
     var subject = 'Contact Form Submission: ' + values.email
 
-    var mailOptions = {
-        from: from,
-        replyTo: from,
-        to: 'omar@omarsfortune.com',
-        subject:  subject,
-        text: values.comment,
-    }
-
-    mailer.sendMail(mailOptions, function(error, info){
+    const msg = {
+      to: 'omar@omarsfortune.com',
+      from: from,
+      replyTo: from,
+      subject: subject,
+      text: values.comment,
+    };
+    sendgrid.send(msg, (error, result) => {
         if(error){
             console.log(error)
             res.json({'success': false, 'message': 'Something went wrong.'})
