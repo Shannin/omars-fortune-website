@@ -17,9 +17,8 @@ app.use('/img', express.static(__dirname + '/img'))
 var mailchimpKey = process.env.MAILCHIMP_API_KEY || 'a544f296627f3988d034230b76bba7bc-us11'
 var mailchimp = MailChimpAPI(mailchimpKey, { version : '2.0' })
 
-var sendgrid = require('@sendgrid/mail')
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY)
-
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 app.post('/api/newsletter', function(req, res) {
     var values = req.body
@@ -100,8 +99,8 @@ app.post('/api/contact', function(req, res) {
       replyTo: from,
       subject: subject,
       text: values.comment,
-    };
-    sendgrid.send(msg, (error, result) => {
+    }
+    sendgrid.send(msg, function (error, result) {
         if(error){
             console.log(error)
             res.json({'success': false, 'message': 'Something went wrong.'})
