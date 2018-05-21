@@ -22,7 +22,7 @@ app.use('/img', express.static(__dirname + '/img'));
 var mailchimp = MailChimpAPI(apiKey, { version : '2.0' });
 
 var mailer = nodemailer.createTransport({
-    service: 'Gmail',
+    service: 'SendGrid',
     auth: {
         user: process.env.EMAIL_MAILER_USER,
         pass: process.env.EMAIL_MAILER_PASS
